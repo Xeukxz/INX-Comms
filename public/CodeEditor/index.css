@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  font-family: 'Source Code Pro';
+  /* font-family: Menlo,Consolas,Monaco,"Lucida Console",Monospace; */
+}
+
+html {
+  background-color: #181a1b !important;
+}
+
+span {
+  outline: none;
+}
+
+#header {
+  position: sticky;
+  height: 30px;
+  width: 100%;
+  background-color: rgb(68, 68, 68);
+}
+
+#header p {
+  position: relative;
+  color: rgb(196, 196, 196);
+  text-align: center;
+  font-size: 15px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-family: 'Orbitron';
+}
+
+#outerFrame {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: calc(100% - 30px);
+}
+
+.lineNo {
+  position: relative;
+  float: left;
+  width: 50px;
+  text-align: center;
+  color: rgb(197, 197, 197);
+}
+
+#holder {
+  position: relative;
+}
+
+.lineData {
+  position: relative;
+  float: left;
+}
+
+.lineData br, .lineData div {
+  display: none;
+}
+
+.editorLine {
+  position: relative;
+  color: rgb(197, 197, 197);
+}

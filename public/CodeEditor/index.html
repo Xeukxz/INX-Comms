@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>
+    INX Code Editor
+  </title>
+  <link rel="stylesheet" href="/index.css">
+  <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <!-- import the webpage's client-side javascript file -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./index.js"></script>
+  <script src="./CodeEditor/lineBreaks.js"></script>
+  <script>
+    var socket = io();
+  </script>
+</head>
+
+<body>
+  <div id="header">
+    <p>
+      INX Code Editor
+    </p>
+  </div>
+
+
+  <div id="outerFrame">
+  <!-- <input type="text" id="messageInput" style="position:relative;left:50%;top:50px;"> -->
+    <div id="innerFrame">
+      <div id="holder">
+        <span class='editorLine' id="line1">
+          <span class='lineNo'>1</span>
+          <span class='lineData' id='line1val' contenteditable="true">1 - 2 / 3 \ 2 - 1</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
